@@ -1167,12 +1167,12 @@ st.metric("💰 Current Price", format_price(float(df['Close'].iloc[-1])))
 st.metric("⏱ Forecast (15 mins)", format_price(next_15) if not np.isnan(next_15) else "N/A")
 st.metric("📅 Forecast (Tomorrow)", format_price(next_day) if not np.isnan(next_day) else "N/A")
 
-        st.markdown("---")
-        st.markdown("### 📊 Interactive Charts")
+st.markdown("---")
+st.markdown("### 📊 Interactive Charts")
 
-        df['Time'] = df.index
-        df['Forecast_15m'] = np.nan
-        df.loc[df.index[-1], 'Forecast_15m'] = next_15
+df['Time'] = df.index
+df['Forecast_15m'] = np.nan
+df.loc[df.index[-1], 'Forecast_15m'] = next_15
 
         # 📈 Line Chart
         fig = go.Figure()
