@@ -1098,8 +1098,9 @@ name_to_symbol = {
   "SwftCoin": "SWFTC-USD",
   "Sora": "XOR-USD",
   "Particl": "PART-USD",
-  "Pepe": "PEPE-USD",
-  "Floki Inu": "FLOKI-USD"
+  "pepe": "PEPE-USD",
+  "Floki Inu": "FLOKI-USD",
+  "shiba inu": "SHIB-USD"
   
 }
 
