@@ -1155,7 +1155,7 @@ try:
 except:
     pass
 
-try:
+
      # 💰 Show metrics
 def format_price(value):
     if value >= 1:
