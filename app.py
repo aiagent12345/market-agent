@@ -1154,7 +1154,7 @@ try:
         next_day = forecast_price(df, model_type=model_choice.split()[0], steps=96)
 
         # 💰 Show metrics
- def format_price(value):
+def format_price(value):
     if value >= 1:
         return f"${value:,.2f}"
     elif value >= 0.01:
@@ -1165,7 +1165,6 @@ try:
 st.metric("💰 Current Price", format_price(float(df['Close'].iloc[-1])))
 st.metric("⏱ Forecast (15 mins)", format_price(next_15) if not np.isnan(next_15) else "N/A")
 st.metric("📅 Forecast (Tomorrow)", format_price(next_day) if not np.isnan(next_day) else "N/A")
-
 
         st.markdown("---")
         st.markdown("### 📊 Interactive Charts")
