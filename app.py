@@ -1174,36 +1174,36 @@ df['Time'] = df.index
 df['Forecast_15m'] = np.nan
 df.loc[df.index[-1], 'Forecast_15m'] = next_15
 
-        # 📈 Line Chart
-        fig = go.Figure()
-        fig.add_trace(go.Scatter(x=df['Time'], y=df['Close'], name='Price', mode='lines+markers'))
-        fig.add_trace(go.Scatter(
-            x=[df['Time'].iloc[-1] + timedelta(minutes=15)],
-            y=[next_15],
-            mode='markers+text',
-            name='15-min Forecast',
-            text=["Forecast"],
-            textposition="top center"
-        ))
-        fig.update_layout(title=f"{symbol} Price Forecast", xaxis_title="Time", yaxis_title="Price")
+   # 📈 Line Chart
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=df['Time'], y=df['Close'], name='Price', mode='lines+markers'))
+fig.add_trace(go.Scatter(
+    x=[df['Time'].iloc[-1] + timedelta(minutes=15)],
+    y=[next_15],
+    mode='markers+text',
+    name='15-min Forecast',
+    text=["Forecast"],
+    textposition="top center"
+))
+fig.update_layout(title=f"{symbol} Price Forecast", xaxis_title="Time", yaxis_title="Price")
 
-        # 🕯 Candlestick Chart
-        fig2 = go.Figure(data=[go.Candlestick(
-            x=data.index,
-            open=data['Open'],
-            high=data['High'],
-            low=data['Low'],
-            close=data['Close']
-        )])
-        fig2.update_layout(title="Candlestick Chart", xaxis_title="Time", yaxis_title="Price")
+    # 🕯 Candlestick Chart
+fig2 = go.Figure(data=[go.Candlestick(
+    x=data.index,
+    open=data['Open'],
+    high=data['High'],
+    low=data['Low'],
+    close=data['Close']
+)])
+fig2.update_layout(title="Candlestick Chart", xaxis_title="Time", yaxis_title="Price")
 
-        # 📊 Bar Chart
-        fig3 = go.Figure(data=[go.Bar(x=df['Time'], y=df['Close'], name='Bar')])
-        fig3.update_layout(title="Bar Chart", xaxis_title="Time", yaxis_title="Price")
+     # 📊 Bar Chart
+fig3 = go.Figure(data=[go.Bar(x=df['Time'], y=df['Close'], name='Bar')])
+fig3.update_layout(title="Bar Chart", xaxis_title="Time", yaxis_title="Price")
 
-        st.plotly_chart(fig, use_container_width=True)
-        st.plotly_chart(fig2, use_container_width=True)
-        st.plotly_chart(fig3, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig2, use_container_width=True)
+st.plotly_chart(fig3, use_container_width=True)
 
 except Exception as e:
     st.error(f"❌ Error: {e}")
