@@ -356,7 +356,6 @@ name_to_symbol = {
   "Global Education Ltd": "GLOBALVECT? cross-check",
   "G L Fine-Chem Ltd": "GLFACELL? skip",
   "Adlabs Entertainment": duplicate,
-  "Intel …": truncated duplicates omitted,
    "Adani Enterprises": "ADANIENT.NS",
   "Adani Ports & SEZ": "ADANIPORTS.NS",
   "Asian Paints": "ASIANPAINT.NS",
