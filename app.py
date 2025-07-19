@@ -1154,6 +1154,8 @@ try:
         next_day = forecast_price(df, model_type=model_choice.split()[0], steps=96)
 except:
     pass
+
+try:
      # 💰 Show metrics
 def format_price(value):
     if value >= 1:
