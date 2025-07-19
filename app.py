@@ -517,7 +517,7 @@ name_to_symbol = {
   "Vodafone Idea Ltd": "IDEA.NS",
   "Voltas Ltd": "VOLTAS.NS",
   "Welspun Corp Ltd": "WELSPUNIND.NS",
-  "Wheelzer"? can drop due to licensing,
+   "Wheelzer": "WZ",
   "Yes Bank Ltd": "YESBANK.NS",
   "Zydus Lifesciences Ltd": "ZYDUSLIFE.NS",
   "APL Apollo Tubes": "APLAPOLLO.NS",
