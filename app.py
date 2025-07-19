@@ -1152,8 +1152,9 @@ try:
         # 🔮 Make predictions
         next_15 = forecast_price(df, model_type=model_choice.split()[0], steps=1)
         next_day = forecast_price(df, model_type=model_choice.split()[0], steps=96)
-
-        # 💰 Show metrics
+except:
+    pass
+     # 💰 Show metrics
 def format_price(value):
     if value >= 1:
         return f"${value:,.2f}"
