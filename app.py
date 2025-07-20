@@ -1152,6 +1152,8 @@ try:
         # 🔮 Make predictions
         next_15 = forecast_price(df, model_type=model_choice.split()[0], steps=1)
         next_day = forecast_price(df, model_type=model_choice.split()[0], steps=96)
+        next_year = forecast_price(df, model_type=model_choice.split()[0], steps=252)
+        next_5_years = forecast_price(df, model_type=model_choice.split()[0], steps=1260)
 
         # 💰 Show metrics
         def format_price(value):
@@ -1165,6 +1167,8 @@ try:
         st.metric("💰 Current Price", format_price(float(df['Close'].iloc[-1])))
         st.metric("⏱ Forecast (15 mins)", format_price(next_15) if not np.isnan(next_15) else "N/A")
         st.metric("📅 Forecast (Tomorrow)", format_price(next_day) if not np.isnan(next_day) else "N/A")
+        st.metric("📆 Forecast (1 Year)", format_price(next_year) if not np.isnan(next_year) else "N/A")
+        st.metric("📆 Forecast (5 Years)", format_price(next_5_years) if not np.isnan(next_5_years) else "N/A")
 
         st.markdown("---")
         st.markdown("### 📊 Interactive Charts")
