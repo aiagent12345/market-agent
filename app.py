@@ -1100,7 +1100,7 @@ name_to_symbol = {
   "Particl": "PART-USD",
   "pepe": "PEPE-USD",
   "Floki Inu": "FLOKI-USD",
-  "shiba inu": "SHIB-USD"
+  "shiba inu": "SHIB-USD",
   "Vodafone Idea Ltd": "IDEA.NS",
   "GTL Infrastructure Ltd": "GTLINFRA.NS",
   "Unitech Ltd": "UNITECH.NS",
@@ -1174,7 +1174,7 @@ name_to_symbol = {
   "Codissia Textile Parks Ltd": "CTPARK.NS",
   "Dhanashree Electronics Ltd": "DHANASHREE.NS",
   "Electrosteel Castings Ltd": "ECLINDIA.NS",
-   "Nibe Ordnance Ltd": "NIBEORDN.NS",
+  "Nibe Ordnance Ltd": "NIBEORDN.NS",
   "Shree Hanuman Sugar & General Mills Ltd": "SHREERSG.NS",
   "Mrugesh Trading Ltd": "MRUGESHTRAD.NS",
   "Eros International Media Ltd": "EROSMEDIA.NS",
