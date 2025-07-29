@@ -1101,7 +1101,6 @@ name_to_symbol = {
   "pepe": "PEPE-USD",
   "Floki Inu": "FLOKI-USD",
   "shiba inu": "SHIB-USD",
-  "Vodafone Idea Ltd": "IDEA.NS",
   "GTL Infrastructure Ltd": "GTLINFRA.NS",
   "Unitech Ltd": "UNITECH.NS",
   "Sarveshwar Foods Ltd": "SARVESHWAR.NS",
